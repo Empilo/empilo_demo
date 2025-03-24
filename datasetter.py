@@ -53,7 +53,7 @@ class FrameDataset(Dataset):
         idx_inj_ori = random.randint(0, self.len_list[num_ori] - 1)
         inj_ori, _ = self.get_frame(idx_inj_ori, num_ori)
 
-        idx_cross = (idx + 3) % sum(self.len_list)
+        idx_cross = random.randint(0, sum(self.len_list) - 1)
         image_cross, num_cross = self.get_frame(idx_cross)
 
         idx_inj_cross = random.randint(0, self.len_list[num_cross] - 1)
