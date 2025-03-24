@@ -1,0 +1,6 @@
+mediapipe
+requests
+scikit-image
+imageio
+PyYAML
+tqdm
